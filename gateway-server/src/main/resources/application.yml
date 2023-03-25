@@ -1,14 +1,8 @@
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id : r1
-          uri : http://localhost:8090/
-          predicates:
-            - Path= /api/v1/customers/**
-        - id : r2
-          uri: http://localhost:8081/
-          predicates:
-            - Path= /api/v1/fraud-check/**
 server:
   port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
