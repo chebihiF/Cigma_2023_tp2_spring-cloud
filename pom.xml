@@ -16,6 +16,7 @@
     <module>customer-service</module>
     <module>fraud-service</module>
     <module>eureka-server</module>
+    <module>config-server</module>
   </modules>
 
   <properties>
@@ -50,6 +51,10 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>

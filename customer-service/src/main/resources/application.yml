@@ -1,23 +1,5 @@
-server:
-  port: 8080
 spring:
+  config:
+    import: optional:configserver:http://localhost:8888
   application:
     name: customer-service
-  datasource:
-    username: 'root'
-    password: 'password'
-    url: jdbc:mysql://localhost:3306/cigma_2023_tp2_springcloud_db?serverTimezone=UTC
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
-        format_sql: true
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-    fetch-registry: true
-    register-with-eureka: true
