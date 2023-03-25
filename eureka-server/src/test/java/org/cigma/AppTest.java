@@ -1,4 +1,4 @@
-package org.cigma.fraud;
+package org.cigma;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
